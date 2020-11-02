@@ -1,12 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
-
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
 import {useNavigation} from '@react-navigation/native';
-
 import {Alert, ToastAndroid, AppState} from 'react-native';
-
 import NuevoPaciente from './CrearDatos';
 import Datos from './DatosPaciente';
 import Usuarios from './ListaUsuarios';
@@ -133,8 +129,6 @@ const Lista = ({navigation}) => {
           500,
           0,
         );
-        /*BluetoothSerial.removeAllListeners = (eventName) =>
-          DeviceEventEmitter.removeAllListeners(eventName);*/
       }
     });
   };
