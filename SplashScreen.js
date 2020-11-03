@@ -22,7 +22,7 @@ const Splash = () => {
     const values = {
       codigo: DeviceInfo.getUniqueId(),
     };
-    await fetch('http://192.168.1.11:8069/api/splash', {
+    await fetch('http://18.222.17.116:8069/api/splash', {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
