@@ -5,8 +5,6 @@ import {useNavigation} from '@react-navigation/native';
 import {ActivityIndicator, Colors} from 'react-native-paper';
 import DeviceInfo from 'react-native-device-info';
 
-
-
 const Splash = () => {
   const windowWidth = Dimensions.get('window').width;
   const windowHeight = Dimensions.get('window').height;
