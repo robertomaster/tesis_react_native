@@ -107,7 +107,7 @@ const Datos = ({navigation, route}) => {
   }, [navigate]);
 
   const getData = async () => {
-    await fetch('http://18.222.17.116:8069/api/signos/' + route.params.id, {
+    await fetch('http://18.222.17.116:8069/api/paciente/' + route.params.id, {
       headers: {
         Accept: 'application/json',
       },
