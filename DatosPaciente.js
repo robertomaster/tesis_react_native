@@ -107,7 +107,7 @@ const Datos = ({navigation, route}) => {
   }, [navigate]);
 
   const getData = async () => {
-    await fetch('http://192.168.1.11:8069/api/signos/' + route.params.id, {
+    await fetch('http://18.222.17.116:8069/api/signos/' + route.params.id, {
       headers: {
         Accept: 'application/json',
       },
@@ -138,7 +138,7 @@ const Datos = ({navigation, route}) => {
 
   const getMensaje = async () => {
     await fetch(
-      'http://192.168.1.11:8069/api/prescripcion/' + route.params.id,
+      'http://18.222.17.116:8069/api/prescripcion/' + route.params.id,
       {
         headers: {
           Accept: 'application/json',
@@ -275,7 +275,7 @@ const Datos = ({navigation, route}) => {
       oxigeno: parseInt(oxigeno),
     };
     console.log(values)
-    await fetch('http://192.168.1.11:8069/api/datosPaciente', {
+    await fetch('http://18.222.17.116:8069/api/datosPaciente', {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
