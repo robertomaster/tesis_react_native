@@ -28,7 +28,7 @@ const Lista = ({navigation}) => {
   const [appStateVisible, setAppStateVisible] = useState(appState.current);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://18.222.17.116:8701', {
+    const ws = new WebSocket('ws://18.222.17.116:80', {
       transports: ['websocket'],
     });
 
